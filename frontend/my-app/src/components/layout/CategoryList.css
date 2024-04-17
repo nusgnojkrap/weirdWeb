@@ -1,0 +1,95 @@
+/*
+ ** Flex Container 설정 **
+ */
+ .example {
+    position: relative;
+    padding: 0.125rem;
+    border: 2px solid #eee;
+    margin-bottom: 1rem;
+  }
+  
+  .splitter {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .p-0 {
+    padding: 0 impotant;
+  }
+  
+  .h-100 {
+    height: 100% !important;
+  }
+  
+  .d-flex {
+    display: flex!important;
+    background-color: skyblue;
+  }
+  
+  /*
+   ** Flex Item 설정 **
+   */
+  .flex-justify-center {
+    justify-content: center !important;
+  }
+  
+  .flex-align-center {
+    align-items: center !important;
+  }
+  
+  .splitter > .split-block {
+    position: relative;
+    flex-grow: 1;
+    overflow: hidden;
+  }
+  
+  /* 오른쪽 flex item 정렬을 열(세로) 방향으로 배치*/
+  .splitter > .vertical {
+    flex-direction: column;
+  }
+  
+  /* 사이의 간격 설정*/
+  .gutter {
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+  
+  /* 좌우 Splitter에 cursor 올릴 경우 크기 변경 모양으로 변경 */
+  .gutter.gutter-horizontal {
+    cursor: col-resize;
+    background-color: #f9f9f9;
+  }
+  
+  /* 상하 Splitter에 cursor 올릴 경우 크기 변경 모양으로 변경 */
+  .gutter.gutter-vertical {
+    cursor: row-resize;
+    background-color: #f9f9f9;
+  }
+  
+  /* splitter 클릭 시(:active) 색상 변경되도록 설정 */
+  .gutter.gutter-horizontal:active, .gutter.gutter-vertical:active {
+    background-color: #c3c3c3;
+  }
+  
+  /* 왼쪽 div의 최소 크기 지정 */
+  #gutter-vertical {
+    min-width: 350px;
+  }
+  
+  /* 오른쪽 div의 최소 크기 지정 */
+  #gutter-horizontal {
+    min-width: 350px;
+  }
+  
+  /* 오른쪽 > 위 div의 최소 크기 지정 */
+  #gutter-top {
+    min-height: 130px;
+  }
+  
+  /* 오른쪽 > 아래 div의 최소 크기 지정 */
+  #gutter-bottem {
+    min-height: 130px;
+  }
