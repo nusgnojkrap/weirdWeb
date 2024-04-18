@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,47 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+/* 전체 wrapper */
+.wrapper {
+  display: flex;
+  flex-direction: row; /* 가로 방향으로 배치 */
+  height: 100vh; /* 화면 전체 높이로 설정 */
+}
+
+/* 왼쪽 사이드바 */
+.sidebar {
+  display: flex;
+  flex-direction: column; /* 가로 방향으로 배치 */
+  flex: 0 0 auto; /* 너비 고정 */
+  width: 200px; /* 고정된 너비 */
+  background-color: #f0f0f0; /* 배경색 */
+  border: 1px solid black; /* 모든 면에 테두리 추가 */
+}
+
+.sidebar_header {
+  display : flex;
+  flex-direction: column; /* 세로 방향으로 배치 */
+  flex: 0 0 auto; /* 너비 고정 */
+  width: 200px; /* 고정된 너비 */
+  background-color: blue; /* 배경색 */
+  border: 1px solid black; /* 모든 면에 테두리 추가 */
+}
+
+.sidebar_body {
+  display : flex;
+  flex-direction: column; /* 세로 방향으로 배치 */
+  flex: 0 0 auto; /* 너비 고정 */
+  width: 200px; /* 고정된 너비 */
+  background-color: blue; /* 배경색 */
+  border: 1px solid black; /* 모든 면에 테두리 추가 */
+}
+
+/* 오른쪽 메인 화면 */
+.main {
+  flex: 1 1 auto; /* 너비 자동 조절 */
+  background-color: #fff; /* 배경색 */
+  padding: 20px; /* 내부 여백 */
+  border: 1px solid black; /* 모든 면에 테두리 추가 */
 }

@@ -1,0 +1,7 @@
+.sidebar_header {
+    display : flex;
+    flex-direction: row; /* 세로 방향으로 배치 */
+    flex: 0 0 auto; /* 너비 고정 */
+    width: 200px; /* 고정된 너비 */
+    background-color: blue; /* 배경색 */
+  }
