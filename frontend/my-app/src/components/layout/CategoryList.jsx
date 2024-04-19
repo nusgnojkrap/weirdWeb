@@ -2,7 +2,7 @@ import React from 'react';
 
 
 function CategoryList({ onSelect }) {
-  const categories = ['Category 1', 'Category 2', 'Category 3'];
+  const categories = ['raycity', 'Mosaic', 'Edge detection', 'Merry go round'];
 
   return (
     <div>
